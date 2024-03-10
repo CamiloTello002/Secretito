@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Secretito</title>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>Secretito</h1>
-    <input
-      type="text"
-      name="secreto"
-      id="secreto"
-      placeholder="Nadie se va a enterar ;)"
-    />
+
+    <form id="myForm" action="/your-post-endpoint" method="post">
+      <!-- Text Input Field -->
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required
+      />
+
+      <!-- Button to Trigger POST Request -->
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
   </body>
 </html>
