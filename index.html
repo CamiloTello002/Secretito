@@ -8,18 +8,10 @@
   </head>
   <body>
     <h1>Secretito</h1>
-
-    <form id="myForm" action="http://127.0.0.1:3002/" method="post">
-      <label for="message">Ingresa tu secreto:</label>
-      <input
-        type="text"
-        id="message"
-        name="username"
-        placeholder="Nadie se va a enterar"
-        required
-      />
-
-      <button type="button" onclick="submitForm()">Guárdalo</button>
+    <form action="http://127.0.0.1:3002/post-secret" method="post">
+      <label for="secret">Secret:</label>
+      <input type="text" id="secret" name="secret" required />
+      <button type="submit">¡Suéltalo!</button>
     </form>
   </body>
 </html>
